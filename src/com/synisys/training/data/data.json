@@ -1,0 +1,20 @@
+[
+  {
+    "username": "Vanush",
+    "password": "5968809bde364295b401a40fe2724bb9",
+    "firstName": "Vanush",
+    "lastName": "Voskanyan",
+    "gender": "Male",
+    "age": 18,
+    "isAdmin": true
+  },
+  {
+    "username": "Pash",
+    "password": "e0998cd45889af50d7de3a7e1d7a3699",
+    "firstName": "Pavel",
+    "lastName": "Arakelyan",
+    "gender": "Male",
+    "age": 23,
+    "isAdmin": false
+  }
+]
