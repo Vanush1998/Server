@@ -1,6 +1,5 @@
 package com.synisys.training.servlets;
 
-import org.apache.commons.io.IOUtils;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
