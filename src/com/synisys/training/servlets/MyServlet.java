@@ -1,6 +1,5 @@
 package com.synisys.training.servlets;
 
-import com.google.gson.Gson;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
