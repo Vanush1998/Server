@@ -1,6 +1,9 @@
 package com.synisys.training.servlets;
 
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,12 +19,12 @@ public class MyServlet
 		System.out.println(request.getMethod() + " " + response.getStatus());
 		System.out.println(request.getReader().readLine());
 		Gson json = new Gson();
-//		System.out.println(request.getParameter("type"));
-//		if (request.getParameter("type").equals("signIn")) {
-//			JsonObject jsonObject = json.fromJson(request.getReader().readLine(), JsonObject.class);
-//			System.out.println(jsonObject.get("username"));
-//			System.out.println("ssss");
-//		}
+		System.out.println(request.getParameter("type"));
+		if (request.getParameter("type").equals("signIn")) {
+			JsonObject jsonObject = json.fromJson(request.getReader().readLine(), JsonObject.class);
+			System.out.println(jsonObject.get("username"));
+			System.out.println("ssss");
+		}
 
 	}
 
