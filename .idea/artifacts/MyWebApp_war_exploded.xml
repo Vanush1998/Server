@@ -2,12 +2,15 @@
   <artifact type="exploded-war" name="MyWebApp:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/MyWebApp_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="MyWebApp/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="MyWebApp" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="com.google.code.gson:gson:2.8.2" />
+        </element>
       </element>
+      <element id="javaee-facet-resources" facet="MyWebApp/web/Web" />
     </root>
   </artifact>
 </component>
