@@ -17,26 +17,22 @@ public class User {
     private String lastName;
     private String username;
     private String password;
+    private Gender gender;
     private int age;
     private boolean isAdmin;
-    private static ArrayList<User> usersList;
 
-    public User(String firstName, String lastName, String userName, String password, int age, boolean isAdmin) {
+
+    public User(String firstName, String lastName, String userName, String password, Gender gender, int age, boolean isAdmin) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = userName;
         this.password = password;
         this.age = age;
+
+        this.gender = gender;
         this.isAdmin = isAdmin;
     }
 
-    public static void addPersonToList(User user) {
-        usersList.add(user);
-    }
-
-    public static ArrayList<User> getPersonsList() {
-        return usersList;
-    }
 
     public String getFirstName() {
         return firstName;
@@ -77,6 +73,22 @@ public class User {
 
     public void setAdmin(boolean admin) {
         isAdmin = admin;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     @Override
