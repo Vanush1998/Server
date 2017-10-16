@@ -3,7 +3,6 @@ package com.synisys.training.servlets;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
-import com.synisys.training.model.User;
 import com.synisys.training.service.SignInService;
 
 import javax.servlet.ServletException;
